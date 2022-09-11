@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Banner from "./components/Banner";
 import { TCollaborator } from "./components/Collaborator/types";
+import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Team from "./components/Team";
 import Globalstyle from "./styles/Globalstyle";
@@ -47,7 +48,6 @@ function App(): JSX.Element {
   const [collaborators, setCollaborators] = useState<TCollaborator[]>([]);
 
   const NewCollaboratorAdded = (collaborator: TCollaborator) => {
-    console.log(collaborators);
     setCollaborators([...collaborators, collaborator]);
   };
   return (
@@ -55,7 +55,7 @@ function App(): JSX.Element {
       <Globalstyle />
       <Banner />
       <Form
-        teamName={Teams.map((item) => item.name)}
+        teamsNames={Teams.map((item) => item.name)}
         registeredCollaborator={(collaborator) =>
           NewCollaboratorAdded(collaborator)
         }
@@ -72,6 +72,7 @@ function App(): JSX.Element {
           noRender={null}
         />
       ))}
+      <Footer />
     </>
   );
 }

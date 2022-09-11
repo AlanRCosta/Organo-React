@@ -5,7 +5,7 @@ import Button from "../Button";
 import React, { useState } from "react";
 import { TForm } from "./types";
 
-const Form: React.FC<TForm> = ({ registeredCollaborator, teamName }) => {
+const Form: React.FC<TForm> = ({ registeredCollaborator, teamsNames }) => {
   const [name, setName] = useState("");
   const [office, setOffice] = useState("");
   const [image, setImage] = useState("");
@@ -52,7 +52,7 @@ const Form: React.FC<TForm> = ({ registeredCollaborator, teamName }) => {
         />
         <DropDownList
           label="Times"
-          items={teamName}
+          items={teamsNames}
           text={team}
           whenChanged={(e) => setTeam(e)}
           required

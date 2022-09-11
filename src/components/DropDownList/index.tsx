@@ -16,6 +16,7 @@ const DropDownList: React.FC<TDropDownList> = ({
         value={text}
         required={required}
       >
+        <option value="" />
         {items.map((item) => (
           <s.ItemList key={item}>{item}</s.ItemList>
         ))}
