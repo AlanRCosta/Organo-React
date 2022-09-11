@@ -7,7 +7,9 @@ export const Container = styled.div`
 export const TitleInput = styled.label`
   display: block;
   margin-bottom: 8px;
+  font-weight: 600;
   font-size: 18px;
+  line-height: 22px;
 `;
 
 export const Input = styled.input`
@@ -17,4 +19,6 @@ export const Input = styled.input`
   border: none;
   font-size: 16px;
   padding: 30px;
+  font-weight: 400;
+  line-height: 20px;
 `;

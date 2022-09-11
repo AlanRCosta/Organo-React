@@ -9,6 +9,9 @@ export const TeamName = styled.h3`
   border-bottom: 4px solid;
   display: inline-block;
   padding-bottom: 8px;
+  font-family: "Prata";
+  font-weight: 400;
+  line-height: 43px;
 `;
 
 export const Collaborators = styled.div`
