@@ -1,9 +1,12 @@
 import { useState } from "react";
-import Banner from "./components/Banner";
+
 import { TCollaborator } from "./components/Collaborator/types";
+
+import Header from "./components/Banner";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Team from "./components/Team";
+
 import Globalstyle from "./styles/Globalstyle";
 
 function App(): JSX.Element {
@@ -53,7 +56,7 @@ function App(): JSX.Element {
   return (
     <>
       <Globalstyle />
-      <Banner />
+      <Header />
       <Form
         teamsNames={Teams.map((item) => item.name)}
         registeredCollaborator={(collaborator) =>

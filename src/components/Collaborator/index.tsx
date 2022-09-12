@@ -1,5 +1,6 @@
-import * as s from "./styles";
 import { TCollaborator } from "./types";
+
+import * as s from "./styles";
 
 export const Collaborator: React.FC<TCollaborator> = ({
   name,

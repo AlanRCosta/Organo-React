@@ -1,6 +1,8 @@
-import { TTeam } from "./types";
-import * as s from "./styles";
 import Collaborator from "../Collaborator";
+
+import { TTeam } from "./types";
+
+import * as s from "./styles";
 
 const Team: React.FC<TTeam> = ({
   team,

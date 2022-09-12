@@ -1,5 +1,6 @@
-import * as s from "./style";
 import { TDropDownList } from "./types";
+
+import * as s from "./style";
 
 const DropDownList: React.FC<TDropDownList> = ({
   items,

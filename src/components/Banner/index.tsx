@@ -1,6 +1,6 @@
 import * as s from "./style";
 
-const Banner: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <s.Container>
       <img src="/images/banner.png" alt="main banner" />
@@ -8,4 +8,4 @@ const Banner: React.FC = () => {
   );
 };
 
-export default Banner;
+export default Header;

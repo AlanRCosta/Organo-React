@@ -1,6 +1,8 @@
 import React, { ChangeEvent } from "react";
-import * as s from "./style";
+
 import { TInputTextProps } from "./types";
+
+import * as s from "./style";
 
 const InputText: React.FC<TInputTextProps> = ({
   label,

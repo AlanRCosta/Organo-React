@@ -1,9 +1,12 @@
-import * as s from "./style";
-import InputText from "../InputText";
-import DropDownList from "../DropDownList";
-import Button from "../Button";
 import React, { useState } from "react";
+
+import Button from "../Button";
+import DropDownList from "../DropDownList";
+import InputText from "../InputText";
+
 import { TForm } from "./types";
+
+import * as s from "./style";
 
 const Form: React.FC<TForm> = ({ registeredCollaborator, teamsNames }) => {
   const [name, setName] = useState("");
